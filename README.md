@@ -13,5 +13,6 @@ WeiboCrawler是一个Python写的爬虫，主要用来抓取新浪微博的数�
 =======
 weibocrawler
 ============
-
+hello world
+I am zhulicong from sjtu
 新浪微博数据爬虫
