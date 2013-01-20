@@ -1,0 +1,16 @@
+{% if not s_error %}
+<div>
+	<p class="alert alert-info">剩余的抓取数量为：<b>{{ fetch_size }}</b></p>
+	<p>
+		<form class="form-inline">
+			<fieldset>
+	    		<legend>设置抓取数量</legend>
+				<input type="text" />
+				<input type="submit" value="提交" class="btn fetchsize"" />
+			</fieldset>
+		</form>
+	</p>
+</div>
+{% else %}
+<p class="alert alert-error"><i class="icon icon-warning-sign"></i>无法连接到调度服务器，请检查网络，或确保调度服务器开启。</p>
+{% end %}

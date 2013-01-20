@@ -1,0 +1,4 @@
+#LWP-Cookies-2.0
+Set-Cookie3: gsid_CTandWM=3_5bc7d5ab43c4da36fccb5871bbddd77b78924bda; path="/"; domain=".sina.cn"; path_spec; domain_dot; expires="2013-02-18 13:11:57Z"; httponly=None; version=0
+Set-Cookie3: gsid_CTandWM=3_5bc7d5ab43c4da36fccb5871bbddd77b78924bda; path="/"; domain=".sina.com.cn"; path_spec; domain_dot; expires="2013-02-18 13:11:57Z"; httponly=None; version=0
+Set-Cookie3: _WEIBO_UID=2153594132; path="/"; domain=".weibo.cn"; path_spec; domain_dot; expires="2013-02-18 13:11:59Z"; httponly=None; version=0

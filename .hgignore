@@ -1,0 +1,13 @@
+syntax: glob
+
+.project
+.pydevproject
+.settings/
+WeiboCrawler/local_settings.py
+WeiboCrawler/cookies.txt
+WeiboCrawler/crawler.log
+WeiboCrawler/test.py
+Scheduler/local_settings.py
+Monitor/monitor.log
+*.pyc
+*~

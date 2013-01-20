@@ -1,0 +1,36 @@
+{% if tasks %}
+<table class="table">
+	<thead>
+		<tr>
+			<th>IP地址</th>
+			<th>实例</th>
+			<th>正在抓取</th>
+			<th>上次更新</th>
+			<th>状态</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for task in tasks %}
+		<tr>
+			<td>{{ task.host }}</td>
+			<td>{{ task.inst }}</td>
+			<td>
+				{{ task.fetches }}
+			</td>
+			<td>{{ task.last_update_date }}</td>
+			<td>
+				{% if task.status == 0 %}
+				<span class="label label-success">运行</span>
+				{% elif task.status == 1 %}
+				<span class="label label-info">挂起</span>
+				{% else %}
+				<span class="label">停止</span>
+				{% end %}
+			</td>
+		</tr>
+		{% end %}
+	</tbody>
+</table>
+{% else %}
+<div class="alert alert-info"><i class="icon icon-info-sign"></i>暂无任何节点运行</div>
+{% end %}

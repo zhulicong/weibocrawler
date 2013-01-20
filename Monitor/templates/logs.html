@@ -1,0 +1,22 @@
+{% if next_log_start == 10 %}
+	{% if logs %}
+<div>
+	<p class="alert alert-info"><i class="icon icon-info-sign"></i>共有<b>{{ n_logs }}</b>条错误日志</p>
+		{% for log in logs %}
+			{% raw log %}
+		{% end %}
+		{% if next_log_start < n_logs %}
+	<a class="btn btn-large btn-block" href="/logs/show/?start={{ next_log_start }}">加载更多...</a>
+		{% end %}
+</div>
+	{% else %}
+<p class="alert"><i class="icon icon-info-sign"></i>日志文件不存在或为空。</p>
+	{% end %}
+{% else %}
+	{% for log in logs %}
+		{% raw log %}
+	{% end %}
+	{% if next_log_start < n_logs %}
+	<a class="btn btn-large btn-block" href="/logs/show/?start={{ next_log_start }}">加载更多...</a>
+	{% end %}
+{% end %}
