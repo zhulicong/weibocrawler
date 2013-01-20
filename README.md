@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # WeiboCrawler
 
 WeiboCrawler是一个Python写的爬虫，主要用来抓取新浪微博的数据。
@@ -15,4 +15,3 @@ weibocrawler
 ============
 
 新浪微博数据爬虫
->>>>>>> 65b169674222a32bb7ca384ff8125502d6d955cb
